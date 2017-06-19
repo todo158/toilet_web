@@ -1,7 +1,7 @@
 /*フォント名*/
 @font-face {
 	font-family: 'KodomoRounded-Light';
-	src: url(KodomoRounded-Light.otf);
+	src: url(../fonts/KodomoRounded-Light.otf);
 }
 
 body {

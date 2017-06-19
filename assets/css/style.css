@@ -7,5 +7,3 @@ body {
 	background-image: url(../img/background.jpg);
 	background-repeat: repeat;
 }
-/*検索機能*/
-#result [class*="hidden-"] {display: none;}

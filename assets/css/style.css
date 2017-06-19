@@ -1,12 +1,11 @@
-/*フォント名*/
 @font-face {
 	font-family: 'KodomoRounded-Light';
 	src: url(../fonts/KodomoRounded-Light.otf);
 }
-
 body {
 	font-family: KodomoRounded-Light;
+	background-image: url(../img/background.jpg);
+	background-repeat: repeat;
 }
 /*検索機能*/
 #result [class*="hidden-"] {display: none;}
-

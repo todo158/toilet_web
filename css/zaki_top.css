@@ -1,0 +1,12 @@
+/*フォント名*/
+@font-face {
+	font-family: 'KodomoRounded-Light';
+	src: url(KodomoRounded-Light.otf);
+}
+
+body {
+	font-family: KodomoRounded-Light;
+}
+/*検索機能*/
+#result [class*="hidden-"] {display: none;}
+

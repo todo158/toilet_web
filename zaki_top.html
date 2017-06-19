@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+    <script type="text/javascript" src="javascript/zaki_top.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0-beta3.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/zaki_top.css" />
+	<title>Title</title>
+</head>
+<body background="toile/back.jpg">
+<basefont size="48pt" color="#ff0000" face="ＭＳ Ｐ明朝">
+
+<h2>Titile Box</h2>
+<br>
+<h3><img src="toile/earth.png" width="80pt" height="80">MAP</h3>
+<br><br>
+
+<h3><img src="toile/search.png" width="80pt" height="80pt">SEARCH</h3>
+
+
+<!-- 検索機能 -->
+
+    <!-- JS設定ここから -->
+<script>
+    // 絞り込みに使うタグ（class）を記述してください。数の上限下限はありません。
+    var $chkbxFilter_tags =['japan','foreign','warm','song','wash']; 
+
+    // 絞り込み対象の要素のHTMLタグを指定してください。（div、section、tr など）
+    var $chkbxFilter_blocks = ['section']   
+</script>
+<!-- JS設定ここまで -->
+
+
+<!-- 絞込み要素選択ここから -->
+<div id="select">
+    
+    <!-- 絞り込まない（全表示）ボタン -->
+<!--     <label class="selected"><input type="radio" id="all" checked="checked">絞り込まない</label> -->
+
+    <!-- 絞込みに使うタグをidとして指定します -->
+    <label><input type="checkbox" id="japan" class="sort">和式</label>
+    <label><input type="checkbox" id="foreign" class="sort">洋式</label><br>
+    <label><input type="checkbox" id="warm" class="sort">あたたかい</label>
+    <label><input type="checkbox" id="song" class="sort">おとひめ</label><br>
+    <label><input type="checkbox" id="wash" class="sort">ウォシュレット</label>
+
+
+</div>
+<!-- 絞込み要素選択ここまで -->
+
+
+<!-- 絞込まれる要素ここから -->
+<div id="result">
+    
+    <!-- 絞込みに使うタグをclassとして指定します -->
+
+    <section class="japan">
+        <p>L1</p>
+    </section>
+
+    <section class="foreign">
+        <p>F1</p>
+    </section>
+
+    <section class="warm">
+        <p>K1</p>
+    </section>
+
+    <section class="song">
+        <p>L2</p>
+    </section>
+
+    <section class="wash">
+        <p>F2</p>
+    </section>
+
+    <section class="foreign warm">
+        <p>K2</p>
+    </section>
+
+</div>
+<!-- 絞込まれる要素ここまで -->
+
+</div>
+
+<h3><img src="toile/pickup.png" width="80pt" height="80pt">PICKUP!</h3>
+
+
+<h3><img src="toile/home.png" width="80pt" height="80pt">LIST</h3>
+
+
+
+	
+</body>
+</html>

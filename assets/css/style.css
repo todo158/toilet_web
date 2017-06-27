@@ -7,3 +7,7 @@ body {
 	background-image: url(../img/background.jpg);
 	background-repeat: repeat;
 }
+header h2 {
+	font-size: 35px;
+	padding: 40px 0;
+}

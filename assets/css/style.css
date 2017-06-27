@@ -22,16 +22,16 @@ header h2 {
 .pick_contents{
 	overflow: auto;
 }
-.content{
+.pick_contents .content{
 	float: left;
 	border-radius: 15px;
 	background-color: #fff;
 	margin-left: 20px;
 }
-.content:first-child{
+.pick_contents .content:first-child{
 	margin: 0;
 }
-.content img{
+.pick_contents .content img{
 	display: block;
 }
 .content h1{

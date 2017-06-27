@@ -11,3 +11,7 @@ header h2 {
 	font-size: 35px;
 	padding: 40px 0;
 }
+.contents {
+	width: 70%;
+	margin: 0 auto;
+}

@@ -34,6 +34,6 @@ header h2 {
 .pick_contents .content img{
 	display: block;
 }
-.content h1{
+.pick_contents .content h1{
 	padding: 5px 0 5px 20px;
 }

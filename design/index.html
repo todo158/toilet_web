@@ -21,7 +21,15 @@
 	<!-- 検索機能 -->
 	<h3><img src="../assets/img/ic/search.png" width="80pt" height="80pt">SEARCH</h3>
 	<!-- 絞込み要素選択ここから -->
-	<div id="select">
+	<select class="select_locate" name="locate">
+		<option value="a">本部棟</option>
+		<option value="b">図書館</option>
+	</select>
+	<select class="select_floor" name="floor">
+		<option value="1">1F</option>
+		<option value="2">2F</option>
+	</select>
+	<div id="checkbox">
 		<!-- 絞込みに使うタグをidとして指定します -->
 		<label><input type="checkbox" id="japan" class="sort">和式</label>
 		<label><input type="checkbox" id="foreign" class="sort">洋式</label><br>

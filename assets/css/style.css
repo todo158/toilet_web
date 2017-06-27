@@ -15,6 +15,9 @@ header h2 {
 	width: 70%;
 	margin: 0 auto;
 }
+.title{
+	padding: 20px 0;
+}
 /*pickup*/
 .pick_contents{
 	overflow: auto;

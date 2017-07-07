@@ -2,54 +2,47 @@
   text-align:right;
   display: block;
 }
-article h2 a img{
-  vertical-align: -10px;
-  margin-right: 5px;
-  width: 5%;
-  height: 5%;
-}
-
-article h2 a {
+.info h2 a {
   text-decoration: none;
   color:#000000;
 }
-article h2 a :hover{
+.info h2 a :hover{
 color:#000000;
 }
 .school_map{
   width:70%;
   height:auto;
 }
-article{
+.honbuto, .info{
   text-align:center;
   width:70%;
   margin: 0 auto;
 }
-article h2{
+.info h2{
     text-align:left;
 }
-figure{
+.map_top{
     background-color: #fbf4ec;
     padding: 5%;
     margin: 0;
     width: 70%;
 
 }
-nav a{
+ul a{
     text-decoration: none;
     display: block;
     color:#000000;
 }
-nav a :hover{
+ul a :hover{
 color:#000000;
 }
-nav p{
+ul p{
   background-color: #fbf4ec;
   padding:7.9% 0;
   margin: 0;
   border: solid 1px #aaaaaa;
 }
-nav{
+ul{
   float: right;
   margin: 0;
   width: 20%;
@@ -59,8 +52,6 @@ nav{
 
 .info{
   background-color: #fbf4ec;
-
-
 }
 .info table{
   margin: 0 auto;

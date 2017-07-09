@@ -2,7 +2,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
-		<title>ToiletBox | トイレ検索アプリケーション</title>
+		<title>ToiletBooks | トイレ検索アプリケーション</title>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0-beta3.js"></script>
 		<script type="text/javascript" src="./assets/js/checkbox.js"></script>
 		<link rel="stylesheet" href="./assets/css/reset.css">
@@ -18,7 +18,7 @@
 	<body>
 		<div class="contents">
 			<header>
-				<h2>ToiletBox</h2>
+				<h2>ToiletBooks</h2>
 			</header>
 			<div class="map">
 				<div class="title">
@@ -36,6 +36,11 @@
 				<select class="select_floor" name="floor">
 					<option value="1">1F</option>
 					<option value="2">2F</option>
+					<option value="3">3F</option>
+					<option value="4">4F</option>
+					<option value="5">5F</option>
+					<option value="6">6F</option>
+					<option value="7">7F</option>
 				</select>
 				<select class="select_sex" name="sex">
 					<option value="1">男</option>
@@ -43,13 +48,14 @@
 					<option value="3">多目的</option>
 				</select>
 				<div id="checkbox">
-					<label><input id="man" type="checkbox" name="">男性</label>
-					<label><input id="woman" type="checkbox" name="">女性</label>
-					<label><input type="checkbox" id="japan" class="sort">和式</label>
-					<label><input type="checkbox" id="foreign" class="sort">洋式</label><br>
-					<label><input type="checkbox" id="warm" class="sort">あたたかい</label>
-					<label><input type="checkbox" id="song" class="sort">おとひめ</label><br>
-					<label><input type="checkbox" id="wash" class="sort">ウォシュレット</label>
+					<form method = "post" name="deta" action="search.php">
+						<label><input type="checkbox" id="japan" name="sort[]" value="japan">和式</label>
+						<label><input type="checkbox" id="foreign" name="sort[]" value="foreign">洋式</label><br>
+						<label><input type="checkbox" id="warm" name="sort[]" value="warm">あたたかい</label>
+						<label><input type="checkbox" id="song" name="sort[]" value="song">おとひめ</label><br>
+						<label><input type="checkbox" id="wash" name="sort[]" value=wash>ウォシュレット</label></br>
+						<span><input type="submit" value="検索する" /></span>
+				  </form>
 				</div>
 				<div id="result">
 					<p>hoge</p>

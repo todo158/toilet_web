@@ -30,10 +30,12 @@
 					<h3><img src="./assets/img/material/ic/search.png" width="80pt" height="80pt">SEARCH</h3>
 				</div>
 				<select class="select_locate" name="locate">
+					<option value="all">すべて</option>
 					<option value="a">本部棟</option>
 					<option value="b">図書館</option>
 				</select>
 				<select class="select_floor" name="floor">
+					<option value="0">すべて</option>
 					<option value="1">1F</option>
 					<option value="2">2F</option>
 					<option value="3">3F</option>
@@ -43,12 +45,13 @@
 					<option value="7">7F</option>
 				</select>
 				<select class="select_sex" name="sex">
+					<option value="0">すべて</option>
 					<option value="1">男</option>
 					<option value="2">女</option>
 					<option value="3">多目的</option>
 				</select>
 				<div id="checkbox">
-					<form method = "post" name="deta" action="search.php">
+					<form method = "get" name="deta" action="search.php">
 						<label><input type="checkbox" id="japan" name="sort[]" value="japan">和式</label>
 						<label><input type="checkbox" id="foreign" name="sort[]" value="foreign">洋式</label><br>
 						<label><input type="checkbox" id="warm" name="sort[]" value="warm">あたたかい</label>

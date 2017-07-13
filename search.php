@@ -25,11 +25,15 @@ if(empty($_GET["sort"])){
      echo "何も選んでません";
 }else{
      $toilet_sort = $_GET["sort"];
-     $toilet = array(japan => '和式', foreign => '洋式', warm => 'あたたかい', song => 'おとひめ', wash => 'ウォシュレット');
-foreach($toilet_sort as $value){
-         $select_toilet .= $toilet[$value]."、";
-    }
-    $toilet_list=rtrim($select_toilet, "、");
+     $toilet = array('japan' => '和式', 'foreign' => '洋式', 'warm' => 'あたたかい', 'song' => 'おとひめ', 'wash' => 'ウォシュレット');
+     for($i=0;$i<count($toilet_sort);$i++){
+          $check_toilet[$toilet_sort[$i]]="checked";
+     }
+     error_reporting(0);
+     foreach($toilet_sort as $value){
+           $select_toilet .= $toilet[$value]."、";
+         }
+         $toilet_list=rtrim($select_toilet, "、");
       echo $toilet_list."を選びました。";
 }
 ?>

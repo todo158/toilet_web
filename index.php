@@ -51,11 +51,12 @@
 					<option value="3">多目的</option>
 				</select>
 				<div id="checkbox">
-					<form method = "get" name="deta" action="search.php">
-						<label><input type="checkbox" id="japan" name="sort[]" value="japan">和式</label>
-						<label><input type="checkbox" id="foreign" name="sort[]" value="foreign">洋式</label><br>
+					<form method = "post" name="deta" action="search.php">
+						<label><input type="checkbox" id="japan" name="sort[]" value="wa">和式</label>
+						<label><input type="checkbox" id="foreign" name="sort[]" value="yo">洋式</label>
+						<label><input type="checkbox" id="foreign" name="sort[]" value="syo">小べん</label><br>
 						<label><input type="checkbox" id="warm" name="sort[]" value="warm">あたたかい</label>
-						<label><input type="checkbox" id="song" name="sort[]" value="song">おとひめ</label><br>
+						<label><input type="checkbox" id="song" name="sort[]" value="music">おとひめ</label><br>
 						<label><input type="checkbox" id="wash" name="sort[]" value=wash>ウォシュレット</label></br>
 						<span><input type="submit" value="検索する" /></span>
 				  </form>

@@ -15,6 +15,9 @@
 				<div class="title">
 					<h3><img src="./assets/img/material/ic/earth.png" width="80pt" height="80">MAP</h3>
 				</div>
+				<div class="image_map">
+					
+				</div>
 			</div>
 			<div class="research">
 				<div class="title">

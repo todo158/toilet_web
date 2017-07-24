@@ -1,3 +1,7 @@
+body {
+	background-image: url(../img/material/background.jpg);
+	background-repeat: repeat;
+}
 .batu{
   text-align:right;
   display: block;
@@ -26,7 +30,6 @@ color:#000000;
     padding: 5%;
     margin: 0;
     width: 70%;
-
 }
 ul a{
     text-decoration: none;
@@ -47,9 +50,6 @@ ul{
   margin: 0;
   width: 20%;
 }
-
-
-
 .info{
   background-color: #fbf4ec;
 }

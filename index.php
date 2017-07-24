@@ -3,17 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>ToiletBooks | トイレ検索アプリケーション</title>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0-beta3.js"></script>
-		<script type="text/javascript" src="./assets/js/checkbox.js"></script>
 		<link rel="stylesheet" href="./assets/css/reset.css">
 		<link rel="stylesheet" href="./assets/css/style.css" />
-		<script>
-			// 絞り込みに使うタグ（class）を記述してください。数の上限下限はありません。
-			var $chkbxFilter_tags =['japan','foreign','warm','song','wash'];
-
-			// 絞り込み対象の要素のHTMLタグを指定してください。（div、section、tr など）
-			var $chkbxFilter_blocks = ['section']
-		</script>
 	</head>
 	<body>
 		<div class="contents">

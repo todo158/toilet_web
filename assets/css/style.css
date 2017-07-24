@@ -1,9 +1,4 @@
-@font-face {
-	font-family: 'KodomoRounded-Light';
-	src: url(../fonts/KodomoRounded-Light.otf);
-}
 body {
-	font-family: KodomoRounded-Light;
 	background-image: url(../img/material/background.jpg);
 	background-repeat: repeat;
 }

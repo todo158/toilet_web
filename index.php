@@ -125,11 +125,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="footer">
-				<div class="project_introduce">
-					<h1>Toilet Bookとは</h1>
-					<h2>富山県立大学のトイレから快適なトイレを検索&発見するサイトです。</h2>
-				</div>
+		</div>
+		<div class="footer">
+			<div class="project_introduce">
+				<h1>Toilet Bookとは</h1>
+				<h2>富山県立大学のトイレから快適なトイレを検索&amp;発見するサイトです。</h2>
+			</div>
+			<div class="copyright">
 				<small>Copyright &copy; CCM(Core Creative Manager) - Toyama Prefectural University.All right reserved.</small>
 			</div>
 		</div>

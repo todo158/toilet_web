@@ -59,3 +59,23 @@ header h2 {
 	position: relative;
 	bottom: 26px;
 }
+.footer{
+	width: 70%;
+	margin: 0 auto;
+}
+.footer .project_introduce h1{
+	font-size: 28px;
+	margin: 30px 0;
+	font-weight: normal;
+}
+.footer .project_introduce h2{
+	font-size: 20px;
+	text-align: center;
+	font-weight: 400;
+}
+.footer .copyright{
+	padding-top: 40px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 12px;
+}

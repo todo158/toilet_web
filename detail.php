@@ -1,3 +1,7 @@
+<?php
+$json = file_get_contents('./assets/json/toilets.json');
+$decode_data = json_decode($json , true) ;
+?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>

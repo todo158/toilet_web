@@ -20,7 +20,7 @@ $decode_data = json_decode($json , true) ;
 					<h3><img src="./assets/img/material/ic/earth.png" width="80pt" height="80">MAP</h3>
 				</div>
 				<div class="image_map">
-
+					<img src="./assets/img/image/map.png" alt="">
 				</div>
 			</div>
 			<div id="search">

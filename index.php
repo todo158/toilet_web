@@ -76,7 +76,63 @@ $decode_data = json_decode($json , true) ;
 					</form>
 				</div>
 				<div id="result">
-					<p>hoge</p>
+					<?php if(!empty($_POST)): ?>
+						<div class="information">
+							<div class="toilet_image">
+								<img class="search_img" src="<?php echo $img_path; ?>" alt="">
+							</div>
+			        <div class="info">
+			          <div class="info_content">
+			            <div class="info_item">
+			              <h1>和式</h1>
+			            </div>
+			            <div class="info_number">
+			              <h1>1</h1>
+			            </div>
+			          </div>
+			          <div class="info_content">
+			            <div class="info_item">
+			              <h1>洋式</h1>
+			            </div>
+			            <div class="info_number">
+			              <h1>1</h1>
+			            </div>
+			          </div>
+			          <div class="info_content">
+			            <div class="info_item">
+			              <h1>小便</h1>
+			            </div>
+			            <div class="info_number">
+			              <h1>1</h1>
+			            </div>
+			          </div>
+			          <div class="info_content">
+			            <div class="info_item">
+			              <h1>暖かい</h1>
+			            </div>
+			            <div class="info_number">
+			              <h1>あり</h1>
+			            </div>
+			          </div>
+			          <div class="info_content">
+			            <div class="info_item">
+			              <h1>おとひめ</h1>
+			            </div>
+			            <div class="info_number">
+			              <h1>あり</h1>
+			            </div>
+			          </div>
+			          <div class="info_content">
+			            <div class="info_item">
+			              <h1>ウォシュレット</h1>
+			            </div>
+			            <div class="info_number">
+			              <h1>あり</h1>
+			            </div>
+			          </div>
+			        </div>
+			      </div>
+					<?php endif; ?>
 				</div>
 			</div>
 			<div class="pickup">

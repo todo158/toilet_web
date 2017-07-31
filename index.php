@@ -85,12 +85,16 @@ $decode_data = json_decode($json , true) ;
 				</div>
 				<div class="pick_contents">
 					<div class="content">
-						<img src="./assets/img/material/ic/search.png" alt="">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
 						<h1>本部棟</h1>
 					</div>
 					<div class="content">
-						<img src="./assets/img/material/ic/search.png" alt="">
-						<h1>図書館</h1>
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>生物工学研究センター</h1>
+					</div>
+					<div class="content">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>合同棟</h1>
 					</div>
 				</div>
 			</div>

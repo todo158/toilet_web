@@ -30,50 +30,47 @@ $decode_data = json_decode($json , true) ;
 				<div class="search_box">
 					<form method = "post" name="data" action="#search">
 						<select class="select_locate" name="locate">
-							<option name="locate[]" value="all">すべて</option>
-							<option name="locate[]" value="a">本部棟</option>
-							<option name="locate[]" value="b">図書館</option>
-							<option name="locate[]" value="c">実習棟</option>
-							<option name="locate[]" value="d">教職員共通棟</option>
-							<option name="locate[]" value="e">研究棟</option>
-							<option name="locate[]" value="f">講義棟</option>
-							<option name="locate[]" value="g">厚生棟</option>
-							<option name="locate[]" value="h">体育館</option>
-							<option name="locate[]" value="i">環境棟</option>
-							<option name="locate[]" value="j">計算機センター</option>
-							<option name="locate[]" value="k">生物工学研究センター</option>
-							<option name="locate[]" value="l">合同棟</option>
-							<option name="locate[]" value="m">生物棟</option>
-							<option name="locate[]" value="n">学生会館</option>
-							<option name="locate[]" value="o">テニスコート</option>
-							<option name="locate[]" value="p">合同講義棟</option>
-							<option name="locate[]" value="q">西棟1</option>
-							<option name="locate[]"value="r">西棟2</option>
-							<option name="locate[]"value="s">西棟3</option>
+							<option name="locate[]" value="1">本部棟</option>
+							<option name="locate[]" value="2">図書館</option>
+							<option name="locate[]" value="3">実習棟</option>
+							<option name="locate[]" value="4">教職員共通棟</option>
+							<option name="locate[]" value="5">研究棟</option>
+							<option name="locate[]" value="6">講義棟</option>
+							<option name="locate[]" value="7">厚生棟</option>
+							<option name="locate[]" value="8">体育館</option>
+							<option name="locate[]" value="9">環境棟</option>
+							<option name="locate[]" value="10">計算機センター</option>
+							<option name="locate[]" value="11">合同棟</option>
+							<option name="locate[]" value="12">生物工学研究センター</option>
+							<option name="locate[]" value="13">生物工学科棟</option>
+							<option name="locate[]" value="14">西棟1</option>
+							<option name="locate[]"value="15">西棟2</option>
+							<option name="locate[]"value="16">西棟3</option>
+							<option name="locate[]" value="17">合同講義棟</option>
+							<option name="locate[]" value="18">学生会館</option>
+							<option name="locate[]" value="19">テニスコート</option>
 						</select>
 						<select class="select_floor" name="floor">
-							<option name="floor[]" value="0">すべて</option>
-							<option name="floor[]" value="1">1F</option>
-							<option name="floor[]" value="2">2F</option>
-							<option name="floor[]" value="3">3F</option>
-							<option name="floor[]" value="4">4F</option>
-							<option name="floor[]" value="5">5F</option>
-							<option name="floor[]" value="6">6F</option>
-							<option name="floor[]" value="7">7F</option>
+							<option class="floor_1" name="floor" value="1" style="display:none;">1F</option>
+							<option class="floor_2" name="floor" value="2" style="display:none;">2F</option>
+							<option class="floor_3" name="floor" value="3">3F</option>
+							<option class="floor_4" name="floor" value="4">4F</option>
+							<option class="floor_5" name="floor" value="5">5F</option>
+							<option class="floor_6" name="floor" value="6">6F</option>
+							<option class="floor_7" name="floor" value="7">7F</option>
 						</select>
-						<select class="select_sex" name="sex">
-							<option name="sex[]" value="0">すべて</option>
-							<option name="sex[]" value="1">男</option>
-							<option name="sex[]" value="2">女</option>
-							<option name="sex[]" value="3">多目的</option>
-						</select>
+						<div class="gender">
+							<label><input type="checkbox" name="dender[]" value="m">男性</label>
+							<label><input type="checkbox" name="dender[]" value="f">女性</label>
+							<label><input type="checkbox" name="dender[]" value="mul">多目的</label>
+						</div>
 						<div class="checkbox">
-							<label><input type="checkbox" id="japan" name="sort[]" value="wa">和式</label>
-							<label><input type="checkbox" id="foreign" name="sort[]" value="yo">洋式</label>
-							<label><input type="checkbox" id="foreign" name="sort[]" value="syo">小べん</label>
-							<label><input type="checkbox" id="warm" name="sort[]" value="warm">あたたかい</label>
-							<label><input type="checkbox" id="song" name="sort[]" value="music">おとひめ</label>
-							<label><input type="checkbox" id="wash" name="sort[]" value=wash>ウォシュレット</label></br>
+							<label><input type="checkbox" name="style[]" value="japanese">和式</label>
+							<label><input type="checkbox" name="style[]" value="western">洋式</label>
+							<label><input type="checkbox" name="style[]" value="piss">小便</label>
+							<label><input type="checkbox" name="style[]" value="warm">あたたかい</label>
+							<label><input type="checkbox" name="style[]" value="otohime">おとひめ</label>
+							<label><input type="checkbox" name="style[]" value="washlet">ウォシュレット</label></br>
 						</div>
 						<input type="submit" name="" value="検索">
 					</form>

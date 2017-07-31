@@ -16,6 +16,15 @@ header h2 {
 .clear{
 	clear: both;
 }
+/*map*/
+.image_map{
+	background-color: #fff;
+	border-radius: 50px;
+}
+.image_map img{
+	width: 90%;
+	margin-left: 5%;
+}
 /*pickup*/
 .pick_contents{
 	overflow: auto;

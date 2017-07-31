@@ -30,22 +30,22 @@ $decode_data = json_decode($json , true) ;
 				<div class="search_box">
 					<form method = "post" name="data" action="#search">
 						<select class="select_locate" name="locate">
-							<option name="locate[]" value="1">本部棟</option>
-							<option name="locate[]" value="2">図書館</option>
-							<option name="locate[]" value="3">実習棟</option>
-							<option name="locate[]" value="4">教職員共通棟</option>
-							<option name="locate[]" value="5">研究棟</option>
-							<option name="locate[]" value="6">講義棟</option>
-							<option name="locate[]" value="7">厚生棟</option>
+							<option name="locate[]" value="1">A 本部棟</option>
+							<option name="locate[]" value="2">B 図書館</option>
+							<option name="locate[]" value="3">C 実習棟</option>
+							<option name="locate[]" value="4">D 教職員共通棟</option>
+							<option name="locate[]" value="5">E 研究棟</option>
+							<option name="locate[]" value="6">F 講義棟</option>
+							<option name="locate[]" value="7">G 厚生棟</option>
 							<option name="locate[]" value="8">体育館</option>
 							<option name="locate[]" value="9">環境棟</option>
 							<option name="locate[]" value="10">計算機センター</option>
-							<option name="locate[]" value="11">合同棟</option>
-							<option name="locate[]" value="12">生物工学研究センター</option>
-							<option name="locate[]" value="13">生物工学科棟</option>
-							<option name="locate[]" value="14">西棟1</option>
-							<option name="locate[]"value="15">西棟2</option>
-							<option name="locate[]"value="16">西棟3</option>
+							<option name="locate[]" value="11">K 生物工学研究センター</option>
+							<option name="locate[]" value="12">L 合同棟</option>
+							<option name="locate[]" value="13">M 生物工学科棟</option>
+							<option name="locate[]" value="14">W 西棟1</option>
+							<option name="locate[]"value="15">W 西棟2</option>
+							<option name="locate[]"value="16">W 西棟3</option>
 							<option name="locate[]" value="17">合同講義棟</option>
 							<option name="locate[]" value="18">学生会館</option>
 							<option name="locate[]" value="19">テニスコート</option>

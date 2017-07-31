@@ -100,29 +100,72 @@ $decode_data = json_decode($json , true) ;
 				</div>
 				<div class="building_contents">
 					<div class="content">
-						<img src="./assets/img/material/ic/search.png" alt="">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
 						<h1>本部棟</h1>
 					</div>
 					<div class="content">
-						<img src="./assets/img/material/ic/search.png" alt="">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
 						<h1>図書館</h1>
 					</div>
 					<div class="content">
-						<img src="./assets/img/material/ic/search.png" alt="">
-						<h1>図書館</h1>
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>実習棟</h1>
 					</div>
 					<div class="content">
-						<img src="./assets/img/material/ic/search.png" alt="">
-						<h1>図書館</h1>
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>教員共通棟</h1>
 					</div>
 					<div class="content">
-						<img src="./assets/img/material/ic/search.png" alt="">
-						<h1>図書館</h1>
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>研究棟</h1>
 					</div>
-					<div class="clear"></div>
 					<div class="content">
-						<img src="./assets/img/material/ic/search.png" alt="">
-						<h1>図書館</h1>
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>講義棟</h1>
+					</div>
+					<div class="content">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>厚生棟</h1>
+					</div>
+					<div class="content">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>体育館</h1>
+					</div>
+					<div class="content">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>環境棟</h1>
+					</div>
+					<div class="content">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>計算機センター</h1>
+					</div>
+					<div class="content">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>生物工学研究センター</h1>
+					</div>
+					<div class="content">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>合同棟</h1>
+					</div>
+					<div class="content">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>生物工学科棟</h1>
+					</div>
+					<div class="content">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>西棟</h1>
+					</div>
+					<div class="content">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>合同講義棟</h1>
+					</div>
+					<div class="content">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>学生会館</h1>
+					</div>
+					<div class="content">
+						<img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>屋外部室</h1>
 					</div>
 				</div>
 			</div>

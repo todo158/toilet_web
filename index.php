@@ -136,5 +136,157 @@ $decode_data = json_decode($json , true) ;
 				<small>Copyright &copy; CCM(Core Creative Manager) - Toyama Prefectural University.All right reserved.</small>
 			</div>
 		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+		$('[name=locate]').change(function() {
+			// 選択されているvalue属性値を取り出す
+			var val = $('[name=locate]').val();
+			console.log(val);
+			switch (val) {
+				case '1':
+					$('.floor_1').css('display', 'none');
+					$('.floor_2').css('display', 'none');
+					$('.floor_3').css('display', 'block');
+					$('.floor_4').css('display', 'block');
+					$('.floor_5').css('display', 'block');
+					$('.floor_6').css('display', 'block');
+					$('.floor_7').css('display', 'block');
+					break;
+				case '2':
+					$('.floor_1').css('display', 'block');
+					$('.floor_2').css('display', 'none');
+					$('.floor_3').css('display', 'none');
+					$('.floor_4').css('display', 'none');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				case '3':
+					$('.floor_1').css('display', 'none');
+					$('.floor_2').css('display', 'none');
+					$('.floor_3').css('display', 'none');
+					$('.floor_4').css('display', 'none');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+				case '4':
+					$('.floor_1').css('display', 'block');
+					$('.floor_2').css('display', 'block');
+					$('.floor_3').css('display', 'none');
+					$('.floor_4').css('display', 'none');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				case '5':
+					$('.floor_1').css('display', 'block');
+					$('.floor_2').css('display', 'block');
+					$('.floor_3').css('display', 'block');
+					$('.floor_4').css('display', 'block');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				case '6':
+					$('.floor_1').css('display', 'block');
+					$('.floor_2').css('display', 'block');
+					$('.floor_3').css('display', 'block');
+					$('.floor_4').css('display', 'none');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				case '7':
+					$('.floor_1').css('display', 'block');
+					$('.floor_2').css('display', 'block');
+					$('.floor_3').css('display', 'none');
+					$('.floor_4').css('display', 'none');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				case '8':
+					$('.floor_1').css('display', 'block');
+					$('.floor_2').css('display', 'block');
+					$('.floor_3').css('display', 'none');
+					$('.floor_4').css('display', 'none');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				case '9':
+					$('.floor_1').css('display', 'block');
+					$('.floor_2').css('display', 'block');
+					$('.floor_3').css('display', 'block');
+					$('.floor_4').css('display', 'block');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				case '10':
+					$('.floor_1').css('display', 'none');
+					$('.floor_2').css('display', 'block');
+					$('.floor_3').css('display', 'block');
+					$('.floor_4').css('display', 'none');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				case '11':
+					$('.floor_1').css('display', 'block');
+					$('.floor_2').css('display', 'block');
+					$('.floor_3').css('display', 'none');
+					$('.floor_4').css('display', 'none');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				case '12':
+					$('.floor_1').css('display', 'block');
+					$('.floor_2').css('display', 'block');
+					$('.floor_3').css('display', 'block');
+					$('.floor_4').css('display', 'block');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				case '13':
+					$('.floor_1').css('display', 'block');
+					$('.floor_2').css('display', 'block');
+					$('.floor_3').css('display', 'block');
+					$('.floor_4').css('display', 'none');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				case '14':
+					$('.floor_1').css('display', 'block');
+					$('.floor_2').css('display', 'block');
+					$('.floor_3').css('display', 'none');
+					$('.floor_4').css('display', 'none');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				case '15':
+					$('.floor_1').css('display', 'block');
+					$('.floor_2').css('display', 'block');
+					$('.floor_3').css('display', 'none');
+					$('.floor_4').css('display', 'none');
+					$('.floor_5').css('display', 'none');
+					$('.floor_6').css('display', 'none');
+					$('.floor_7').css('display', 'none');
+					break;
+				default:
+					$('.floor_1').css('display', 'none');
+					$('.floor_2').css('display', 'none');
+					$('.floor_3').css('display', 'block');
+					$('.floor_4').css('display', 'block');
+					$('.floor_5').css('display', 'block');
+					$('.floor_6').css('display', 'block');
+					$('.floor_7').css('display', 'block');
+			}
+		});
+		</script>
 	</body>
 </html>

@@ -77,14 +77,6 @@ if(!empty($_POST)){
 							<label><input type="checkbox" name="dender[]" value="f">女性</label>
 							<label><input type="checkbox" name="dender[]" value="mul">多目的</label>
 						</div>
-						<div class="checkbox">
-							<label><input type="checkbox" name="style[]" value="japanese">和式</label>
-							<label><input type="checkbox" name="style[]" value="western">洋式</label>
-							<label><input type="checkbox" name="style[]" value="piss">小便</label>
-							<label><input type="checkbox" name="style[]" value="warm">あたたかい</label>
-							<label><input type="checkbox" name="style[]" value="otohime">おとひめ</label>
-							<label><input type="checkbox" name="style[]" value="washlet">ウォシュレット</label></br>
-						</div>
 						<input type="submit" name="" value="検索">
 					</form>
 				</div>

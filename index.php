@@ -1,6 +1,19 @@
 <?php
 $json = file_get_contents('./assets/json/toilets.json');
-$decode_data = json_decode($json , true) ;
+$decode_data = json_decode($json, true);
+$post_data = array();
+if(!empty($_POST)){
+	$post = $_POST;
+	if(empty($post['gender']) && empty($post['style'])){
+		if(!empty($post['locate'])){
+			$section = $post['locate'];
+			$floor = $post['floor'];
+			$section_name = $decode_data[$section]['section'];
+			$post_data[] = $decode_data[$section]['floor'][$floor];
+			$count = count($decode_data[$section]['floor'][$floor]) + 1;
+		}
+	}
+}
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -78,59 +91,102 @@ $decode_data = json_decode($json , true) ;
 				<div id="result">
 					<?php if(!empty($_POST)): ?>
 						<div class="information">
-							<div class="toilet_image">
-								<img class="search_img" src="<?php echo $img_path; ?>" alt="">
+							<div class="info_section">
+								<img src="./assets/img/material/ic/home.png" alt="">
+								<p class="info_section_name"><?php echo $section_name; ?></p>
+								<p class="info_section_floor"><?php echo $floor; ?>F</p>
 							</div>
-			        <div class="info">
-			          <div class="info_content">
-			            <div class="info_item">
-			              <h1>和式</h1>
-			            </div>
-			            <div class="info_number">
-			              <h1>1</h1>
-			            </div>
-			          </div>
-			          <div class="info_content">
-			            <div class="info_item">
-			              <h1>洋式</h1>
-			            </div>
-			            <div class="info_number">
-			              <h1>1</h1>
-			            </div>
-			          </div>
-			          <div class="info_content">
-			            <div class="info_item">
-			              <h1>小便</h1>
-			            </div>
-			            <div class="info_number">
-			              <h1>1</h1>
-			            </div>
-			          </div>
-			          <div class="info_content">
-			            <div class="info_item">
-			              <h1>暖かい</h1>
-			            </div>
-			            <div class="info_number">
-			              <h1>あり</h1>
-			            </div>
-			          </div>
-			          <div class="info_content">
-			            <div class="info_item">
-			              <h1>おとひめ</h1>
-			            </div>
-			            <div class="info_number">
-			              <h1>あり</h1>
-			            </div>
-			          </div>
-			          <div class="info_content">
-			            <div class="info_item">
-			              <h1>ウォシュレット</h1>
-			            </div>
-			            <div class="info_number">
-			              <h1>あり</h1>
-			            </div>
-			          </div>
-			        </div>
+							<?php
+							if(empty($post_data[0])){
+								echo '<p>';
+								echo 'お探しの場所にはトイレがありません。';
+								echo '</p>';
+							}
+							?>
+							<?php
+							for($i = 1; $i < $count; $i++):
+								$img_path = $post_data['0'][$i]['toilet_img_path'];
+								$value = array();
+								foreach ($post_data[0][$i] as $key => $value[]) {
+								}
+							?>
+								<div class="content">
+									<div class="toilet_image">
+										<img class="search_img" src="<?php echo $img_path; ?>" alt="">
+									</div>
+					        <div class="info">
+										<div class="gender">
+											<?php if($key == 'male'): ?>
+												<p>男子トイレ</p>
+											<?php elseif($key == 'female'): ?>
+												<p>女子トイレ</p>
+											<?php elseif($key == 'multipurpose'): ?>
+												<p>多目的トイレ</p>
+											<?php endif; ?>
+										</div>
+					          <div class="info_content">
+					            <div class="info_item">
+					              <h1>和式</h1>
+					            </div>
+					            <div class="info_number">
+					              <h1><?php echo $value[1]['style'][0]['japanese_style']; ?></h1>
+					            </div>
+					          </div>
+					          <div class="info_content">
+					            <div class="info_item">
+					              <h1>洋式</h1>
+					            </div>
+					            <div class="info_number">
+					              <h1><?php echo $value[1]['style'][0]['western_style']; ?></h1>
+					            </div>
+					          </div>
+					          <div class="info_content">
+					            <div class="info_item">
+					              <h1>小便</h1>
+					            </div>
+					            <div class="info_number">
+					              <h1><?php echo $value[1]['style'][0]['piss']; ?></h1>
+					            </div>
+					          </div>
+					          <div class="info_content">
+					            <div class="info_item">
+					              <h1>暖かい</h1>
+					            </div>
+					            <div class="info_number">
+												<?php if($value[1]['style'][0]['warm'] == 1): ?>
+					              	<h1>あり</h1>
+												<?php else: ?>
+													<h1>なし</h1>
+												<?php endif; ?>
+					            </div>
+					          </div>
+					          <div class="info_content">
+					            <div class="info_item">
+					              <h1>おとひめ</h1>
+					            </div>
+					            <div class="info_number">
+												<?php if($value[1]['style'][0]['otohime'] == 1): ?>
+					              	<h1>あり</h1>
+												<?php else: ?>
+													<h1>なし</h1>
+												<?php endif; ?>
+					            </div>
+					          </div>
+					          <div class="info_content">
+					            <div class="info_item">
+					              <h1>ウォシュレット</h1>
+					            </div>
+					            <div class="info_number">
+												<?php if($value[1]['style'][0]['washlet'] == 1): ?>
+					              	<h1>あり</h1>
+												<?php else: ?>
+													<h1>なし</h1>
+												<?php endif; ?>
+					            </div>
+					          </div>
+					        </div>
+								</div>
+							<?php endfor; ?>
 			      </div>
 					<?php endif; ?>
 				</div>

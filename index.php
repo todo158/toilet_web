@@ -183,25 +183,6 @@ if(!empty($_POST)){
 					<?php endif; ?>
 				</div>
 			</div>
-			<div class="pickup">
-				<div class="title">
-					<h3><img src="./assets/img/material/ic/pickup.png" width="80pt" height="80pt">PICKUP!</h3>
-				</div>
-				<div class="pick_contents">
-					<div class="content">
-						<img src="./assets/img/image/tpu-image.jpg" alt="">
-						<h1>本部棟</h1>
-					</div>
-					<div class="content">
-						<img src="./assets/img/image/tpu-image.jpg" alt="">
-						<h1>生物工学研究センター</h1>
-					</div>
-					<div class="content">
-						<img src="./assets/img/image/tpu-image.jpg" alt="">
-						<h1>合同棟</h1>
-					</div>
-				</div>
-			</div>
 			<div class="building_research">
 				<div class="title">
 					<h3><img src="./assets/img/material/ic/home.png" width="80pt" height="80pt">LIST</h3>

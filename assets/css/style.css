@@ -26,6 +26,9 @@ header h2 {
 	margin-left: 5%;
 }
 /*search*/
+.search_box .gender{
+	padding: 20px 0;
+}
 .information{
 	width: 100%;
 	background-color: #fff;

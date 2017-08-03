@@ -329,8 +329,8 @@ if(!empty($_POST)){
 				</div>
 				<div class="building_contents">
 					<div class="content">
-						<img src="./assets/img/image/tpu-image.jpg" alt="">
-						<h1>本部棟</h1>
+						<a href="search.php?section_id=1"><img src="./assets/img/image/tpu-image.jpg" alt="">
+						<h1>本部棟</h1></a>
 					</div>
 					<div class="content">
 						<img src="./assets/img/image/tpu-image.jpg" alt="">

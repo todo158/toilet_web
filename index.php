@@ -78,39 +78,40 @@ if(!empty($_POST)){
 				<div class="search_box">
 					<form method = "post" name="data" action="#search">
 						<select class="select_locate" name="locate">
-							<option name="locate[]" value="1" <?php if($post['locate'] == 1) echo 'selected'; ?>>A 本部棟</option>
-							<option name="locate[]" value="2" <?php if($post['locate'] == 2) echo 'selected'; ?>>B 図書館</option>
-							<option name="locate[]" value="3" <?php if($post['locate'] == 3) echo 'selected'; ?>>C 実習棟</option>
-							<option name="locate[]" value="4" <?php if($post['locate'] == 4) echo 'selected'; ?>>D 教職員共通棟</option>
-							<option name="locate[]" value="5" <?php if($post['locate'] == 5) echo 'selected'; ?>>E 研究棟</option>
-							<option name="locate[]" value="6" <?php if($post['locate'] == 6) echo 'selected'; ?>>F 講義棟</option>
-							<option name="locate[]" value="7" <?php if($post['locate'] == 7) echo 'selected'; ?>>G 厚生棟</option>
-							<option name="locate[]" value="8" <?php if($post['locate'] == 8) echo 'selected'; ?>>体育館</option>
-							<option name="locate[]" value="9" <?php if($post['locate'] == 9) echo 'selected'; ?>>環境棟</option>
-							<option name="locate[]" value="10" <?php if($post['locate'] == 10) echo 'selected'; ?>>計算機センター</option>
-							<option name="locate[]" value="11" <?php if($post['locate'] == 11) echo 'selected'; ?>>K 生物工学研究センター</option>
-							<option name="locate[]" value="12" <?php if($post['locate'] == 12) echo 'selected'; ?>>L 合同棟</option>
-							<option name="locate[]" value="13" <?php if($post['locate'] == 13) echo 'selected'; ?>>M 生物工学科棟</option>
-							<option name="locate[]" value="14" <?php if($post['locate'] == 14) echo 'selected'; ?>>W 西棟1</option>
-							<option name="locate[]"value="15" <?php if($post['locate'] == 15) echo 'selected'; ?>>W 西棟2</option>
-							<option name="locate[]"value="16" <?php if($post['locate'] == 16) echo 'selected'; ?>>W 西棟3</option>
-							<option name="locate[]" value="17" <?php if($post['locate'] == 17) echo 'selected'; ?>>合同講義棟</option>
-							<option name="locate[]" value="18" <?php if($post['locate'] == 18) echo 'selected'; ?>>学生会館</option>
-							<option name="locate[]" value="19" <?php if($post['locate'] == 19) echo 'selected'; ?>>テニスコート</option>
+							<option name="locate[]" value="1" <?php if(!empty($post) && $post['locate'] == 1) echo 'selected'; ?>>A 本部棟</option>
+							<option name="locate[]" value="2" <?php if(!empty($post) && $post['locate'] == 2) echo 'selected'; ?>>B 図書館</option>
+							<option name="locate[]" value="3" <?php if(!empty($post) && $post['locate'] == 3) echo 'selected'; ?>>C 実習棟</option>
+							<option name="locate[]" value="4" <?php if(!empty($post) && $post['locate'] == 4) echo 'selected'; ?>>D 教職員共通棟</option>
+							<option name="locate[]" value="5" <?php if(!empty($post) && $post['locate'] == 5) echo 'selected'; ?>>E 研究棟</option>
+							<option name="locate[]" value="6" <?php if(!empty($post) && $post['locate'] == 6) echo 'selected'; ?>>F 講義棟</option>
+							<option name="locate[]" value="7" <?php if(!empty($post) && $post['locate'] == 7) echo 'selected'; ?>>G 厚生棟</option>
+							<option name="locate[]" value="8" <?php if(!empty($post) && $post['locate'] == 8) echo 'selected'; ?>>体育館</option>
+							<option name="locate[]" value="9" <?php if(!empty($post) && $post['locate'] == 9) echo 'selected'; ?>>環境棟</option>
+							<option name="locate[]" value="10" <?php if(!empty($post) && $post['locate'] == 10) echo 'selected'; ?>>計算機センター</option>
+							<option name="locate[]" value="11" <?php if(!empty($post) && $post['locate'] == 11) echo 'selected'; ?>>K 生物工学研究センター</option>
+							<option name="locate[]" value="12" <?php if(!empty($post) && $post['locate'] == 12) echo 'selected'; ?>>L 合同棟</option>
+							<option name="locate[]" value="13" <?php if(!empty($post) && $post['locate'] == 13) echo 'selected'; ?>>M 生物工学科棟</option>
+							<option name="locate[]" value="14" <?php if(!empty($post) && $post['locate'] == 14) echo 'selected'; ?>>W 西棟1</option>
+							<option name="locate[]"value="15" <?php if(!empty($post) && $post['locate'] == 15) echo 'selected'; ?>>W 西棟2</option>
+							<option name="locate[]"value="16" <?php if(!empty($post) && $post['locate'] == 16) echo 'selected'; ?>>W 西棟3</option>
+							<option name="locate[]" value="17" <?php if(!empty($post) && $post['locate'] == 17) echo 'selected'; ?>>合同講義棟</option>
+							<option name="locate[]" value="18" <?php if(!empty($post) && $post['locate'] == 18) echo 'selected'; ?>>学生会館</option>
+							<option name="locate[]" value="19" <?php if(!empty($post) && $post['locate'] == 19) echo 'selected'; ?>>テニスコート</option>
 						</select>
 						<select class="select_floor" name="floor">
-							<option class="floor_1" name="floor" value="1" style="display:none;" <?php if($post['floor'] == 1) echo 'selected'; ?>>1F</option>
-							<option class="floor_2" name="floor" value="2" style="display:none;" <?php if($post['floor'] == 2) echo 'selected'; ?>>2F</option>
-							<option class="floor_3" name="floor" value="3" <?php if($post['floor'] == 3) echo 'selected'; ?>>3F</option>
-							<option class="floor_4" name="floor" value="4" <?php if($post['floor'] == 4) echo 'selected'; ?>>4F</option>
-							<option class="floor_5" name="floor" value="5" <?php if($post['floor'] == 5) echo 'selected'; ?>>5F</option>
-							<option class="floor_6" name="floor" value="6" <?php if($post['floor'] == 6) echo 'selected'; ?>>6F</option>
-							<option class="floor_7" name="floor" value="7" <?php if($post['floor'] == 7) echo 'selected'; ?>>7F</option>
+							<option class="floor_1" name="floor" value="1" style="display:none;" <?php if(!empty($post) && $post['floor'] == 1) echo 'selected'; ?>>1F</option>
+							<option class="floor_2" name="floor" value="2" style="display:none;" <?php if(!empty($post) && $post['floor'] == 2) echo 'selected'; ?>>2F</option>
+							<option class="floor_3" name="floor" value="3" <?php if(!empty($post) && $post['floor'] == 3) echo 'selected'; ?>>3F</option>
+							<option class="floor_4" name="floor" value="4" <?php if(!empty($post) && $post['floor'] == 4) echo 'selected'; ?>>4F</option>
+							<option class="floor_5" name="floor" value="5" <?php if(!empty($post) && $post['floor'] == 5) echo 'selected'; ?>>5F</option>
+							<option class="floor_6" name="floor" value="6" <?php if(!empty($post) && $post['floor'] == 6) echo 'selected'; ?>>6F</option>
+							<option class="floor_7" name="floor" value="7" <?php if(!empty($post) && $post['floor'] == 7) echo 'selected'; ?>>7F</option>
 						</select>
 						<div class="gender">
-							<label><input type="checkbox" name="gender[]" value="m">男性</label>
-							<label><input type="checkbox" name="gender[]" value="f">女性</label>
-							<label><input type="checkbox" name="gender[]" value="mul">多目的</label>
+							<label><input type="checkbox" name="gender[]" value="m" <?php if(!empty($post['gender']) && $post['gender'][0] == 'm') echo 'checked'; ?>>男性</label>
+							<label><input type="checkbox" name="gender[]" value="f" <?php if(!empty($post['gender']) && $post['gender'][0] == 'f' || isset($post['gender'][1]) &&
+							$post['gender'][1] == 'f') echo 'checked'; ?>>女性</label>
+							<label><input type="checkbox" name="gender[]" value="mul" <?php if(!empty($post['gender']) && $post['gender'][$count_gender - 1] == 'mul') echo 'checked'; ?>>多目的</label>
 						</div>
 						<input type="submit" name="" value="検索">
 					</form>

@@ -213,6 +213,11 @@ if(!empty($_POST)){
 					            </div>
 					          </div>
 					        </div>
+									<div class="page_link">
+										<div class="page_link_inner">
+											<a href="detail.php"><img src="./assets/img/material/ic/arrow_right.png" alt=""></a>
+										</div>
+									</div>
 								</div>
 							<?php endfor; ?>
 			      </div>
@@ -306,6 +311,11 @@ if(!empty($_POST)){
 												</div>
 						    			</div>
 				      			</div>
+										<div class="page_link">
+											<div class="page_link_inner">
+												<a href="detail.php"><img src="./assets/img/material/ic/arrow_right.png" alt=""></a>
+											</div>
+										</div>
 									</div>
 								<?php endfor; ?>
 							<?php endif; ?>

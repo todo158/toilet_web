@@ -38,7 +38,7 @@ header h2 {
 	overflow: auto;
 }
 .toilet_image{
-	width: 25%;
+	width: 22%;
 	margin-left: 3%;
 	float: left;
 	overflow: hidden;
@@ -53,7 +53,7 @@ header h2 {
 	padding: 10px 0 0;
 }
 .info{
-	width: 68%;
+	width: 65%;
 	margin-left: 4%;
 	float: left;
 	padding: 10px 0 20px;
@@ -116,6 +116,23 @@ header h2 {
 	float: left;
 	width: 30%;
 	font-size: 15px;
+}
+.page_link{
+	width: 5%;
+	height: 215px;
+	float: left;
+}
+.page_link_inner{
+	width: 100%;
+	position: relative;
+	top: 35%;
+}
+.page_link_inner a{
+	display: block;
+}
+.page_link_inner img{
+	width: 100%;
+	height: auto;
 }
 /*pickup*/
 .pick_contents{

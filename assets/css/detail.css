@@ -1,62 +1,93 @@
-.batu{
-  text-align:right;
-  display: block;
+body {
+	background-image: url(../img/material/background.jpg);
+	background-repeat: repeat;
 }
-.info h2 a {
-  text-decoration: none;
-  color:#000000;
+.back_to_top_page{
+	position: fixed;
+	top: 30px;
+	left: 50px;
 }
-.info h2 a :hover{
-color:#000000;
+.back_to_top_page a{
+	display: block;
 }
-.school_map{
-  width:70%;
-  height:auto;
+.back_to_top_page img{
+	width: 100px;
 }
-.honbuto, .info{
-  text-align:center;
-  width:70%;
-  margin: 0 auto;
+.contents{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 200px;
 }
-.info h2{
-    text-align:left;
+.title{
+	margin-bottom: 20px;
 }
-.map_top{
-    background-color: #fbf4ec;
-    padding: 5%;
-    margin: 0;
-    width: 70%;
-
+.title h3{
+	position: relative;
+	bottom: 20px;
+	left: 30px;
+	font-size: 32px;
 }
-ul a{
-    text-decoration: none;
-    display: block;
-    color:#000000;
+.title img{
+	width: 80px;
+	position: relative;
+	top: 20px;
+	right: 30px;
 }
-ul a :hover{
-color:#000000;
+.info_image img{
+	width: 100%;
+	display: block;
 }
-ul p{
-  background-color: #fbf4ec;
-  padding:7.9% 0;
-  margin: 0;
-  border: solid 1px #aaaaaa;
+.information{
+	width: 100%;
+	background-color: #fff;
 }
-ul{
-  float: right;
-  margin: 0;
-  width: 20%;
-}
-
-
-
 .info{
-  background-color: #fbf4ec;
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
-.info table{
-  margin: 0 auto;
+.info_content{
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 25px;
+	overflow: auto;
 }
-th,td{
-  font-size: 20px;
-  width: 0 30%;
+.info_content:before{
+	content: '';
+  float: left;
+  width: 30px;
+  height: 30px;
+	background: url('../img/material/ic/circle.png');
+	background-size: 30px;
+}
+.info_content:after{
+	content: '';
+  float: right;
+  width: 92%;
+  height: 6px;
+	background: url('../img/material/ic/border.png');
+	background-size: 95% 6px;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 4px;
+}
+.info_item{
+	float: left;
+	width: 60%;
+	font-size: 20px;
+}
+.info_item h1{
+	padding-left: 50px;
+}
+.info_number{
+	float: left;
+	width: 30%;
+	font-size: 20px;
+}
+.footer{
+	padding-top: 40px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 12px;
 }

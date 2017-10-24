@@ -4,7 +4,8 @@ if(empty($_REQUEST['section_id'])){
   exit();
 }
 elseif(!empty($_REQUEST['section_id'])){
-  $json = file_get_contents('./assets/json/toilets.json');
+  $url = "http://tpu-wc-book.sakura.ne.jp/toilets_information.json";
+  $json = file_get_contents($url);
   $decode_data = json_decode($json, true);
   $post_data = array();
   $section = $_REQUEST['section_id'];

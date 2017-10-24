@@ -1,0 +1,104 @@
+body {
+	background-image: url(../img/material/background.jpg);
+	background-repeat: repeat;
+}
+.back_to_top_page{
+	position: fixed;
+	top: 30px;
+	left: 50px;
+}
+.back_to_top_page button{
+	display: block;
+}
+.back_to_top_page img{
+	width: 100px;
+}
+.contents{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+.floor_title{
+	font-size: 23px;
+	text-align: center;
+}
+.title{
+	margin-bottom: 20px;
+}
+.title h3{
+	position: relative;
+	bottom: 20px;
+	left: 30px;
+	font-size: 32px;
+}
+.title img{
+	width: 80px;
+	position: relative;
+	top: 20px;
+	right: 30px;
+}
+.info_image{
+	width: 30%;
+	display: block;
+	margin: 0 15px 20px 15px;
+	float: left;
+}
+.information{
+	width: 100%;
+	background-color: #fff;
+	height: auto;
+}
+.info{
+	width: 90%;
+	margin-left: 50px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.info_content{
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 25px;
+	overflow: auto;
+}
+.toitet_info{
+	width: 65%;
+	margin-left: auto;
+}
+.info_content:before{
+	content: '';
+  float: left;
+  width: 30px;
+  height: 30px;
+	background: url('../img/material/ic/circle.png');
+	background-size: 30px;
+}
+.info_content:after{
+	content: '';
+  float: right;
+  width: 92%;
+  height: 6px;
+	background: url('../img/material/ic/border.png');
+	background-size: 95% 6px;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 4px;
+}
+.info_item{
+	float: left;
+	width: 60%;
+	font-size: 20px;
+}
+.info_item h1{
+	padding-left: 50px;
+}
+.info_number{
+	float: left;
+	width: 30%;
+	font-size: 20px;
+}
+.footer{
+	padding-top: 40px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 12px;
+}

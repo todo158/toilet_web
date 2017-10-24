@@ -7,7 +7,7 @@ body {
 	top: 30px;
 	left: 50px;
 }
-.back_to_top_page a{
+.back_to_top_page button{
 	display: block;
 }
 .back_to_top_page img{
@@ -34,6 +34,10 @@ body {
 	right: 30px;
 }
 .info_image img{
+	width: 50%;
+	display: block;
+}
+.floor_photo img{
 	width: 100%;
 	display: block;
 }
